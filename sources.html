@@ -15,18 +15,13 @@ body {
 }
 div.top div.footer {
   width:100%;
-  overflow:auto;
+  overflow: auto;
 }
 div.top div {
   width:50%;  
   float:left;
 }
-div.footer {
-  position: absolute;
-  bottom: 0px;
-  width:100%;
-}
-div.footer div {
+footer div {
   position: relative;
   width:50%;
   float:left;
@@ -42,8 +37,8 @@ mdui-button {
 <h4>CaesiumOS</h4>
 </div>
 <div class="top-nav" style="position: relative; overflow: hidden">
-<mdui-navigation-bar scroll-target=".top-nav" value="home">
-<mdui-navigation-bar-item icon="home" value="home">Home</mdui-navigation-bar-item>
+<mdui-navigation-bar scroll-target=".top-nav" value="">
+<mdui-navigation-bar-item icon="home" value="home" href="index.html">Home</mdui-navigation-bar-item>
 <mdui-navigation-bar-item icon="devices" value="devices" href="devices.html">Devices</mdui-navigation-bar-item>
 <mdui-navigation-bar-item icon="people" value="about" href="about.html">About</mdui-navigation-bar-item>
 </mdui-navigation-bar>
@@ -68,7 +63,7 @@ mdui-button {
 <p>The source code of the jpbROM project is hosted on GitHub under the 'jpbROM' organization.<br>jpbROM is the original name of CaesiumOS, with it having been retained in versions based on Android 14 and below.</p>
 <mdui-button href="https://github.com/jpbROM">Check out the jpbROM source</mdui-button>
 </div>
-<div class="footer">
+<footer>
 <div class="footer-left">
 <h4>CaesiumOS</h4>
 <p>Lightweight, private, customizable</p>
@@ -81,6 +76,6 @@ mdui-button {
 <br>
 <mdui-button href="team.html">Meet the team!</mdui-button>
 </div>
-</div>
+</footer>
 </body>
 </html>
